@@ -1,0 +1,1 @@
+This directory contains all the tasks of the "0x00. Shell, basics" project
