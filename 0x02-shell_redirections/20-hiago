@@ -1,2 +1,2 @@
 #!/bin/bash
-TEXT
+tr -d cC
