@@ -1,9 +1,9 @@
 # Puppet to make changes to our configuration file.
-::ssh::client::config::user { 'ubuntu':
-  options => {
-    'Host 104.196.209.226' => {
-      'IdentityFile'           => '~/.ssh/holberton',
-      'PasswordAuthentication' => 'no',
-    }
-  }
+file_line { 'disable password login':
+  path => '~/.ssh/holberton',
+  line => 'PasswordAuthentication no',
+}
+file_line { 'add path to find the keys':
+  path => '~/.ssh/holberton',
+  line => 'IdentityFile ~/.ssh/holberton',
 }
