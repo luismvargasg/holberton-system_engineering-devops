@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that configures an Ubuntu machine with a custom Nginx response header
+apt-get -y update
+apt-get -y install nginx
+sed -i "15i \\\tadd_header X-Served-By 1610-web-02;" /etc/nginx/nginx.conf
+service nginx start
+service nginx reload
