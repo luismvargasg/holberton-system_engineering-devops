@@ -5,6 +5,6 @@ package { 'nginx':
 }
 file_line { 'append a line in nginx config file':
   path  => '/etc/nginx/nginx.conf',
-  line  => 'IdentityFile ~/.ssh/holberton',
+  line  => 'add_header X-Served-By 1610-web-02;',
   after => 'http {',
 }
