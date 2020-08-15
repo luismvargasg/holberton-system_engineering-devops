@@ -8,8 +8,8 @@ package { 'nginx':
 }
 file_line { 'append a line in nginx config file':
   path  => '/etc/nginx/nginx.conf',
-  line  => "http {\n\tadd_header X-Served-By ${hostname};",
-  match => 'http {',
+  line  => "\tadd_header X-Served-By ${hostname};",
+  after => 'http {',
 }
 exec { 'sudo service nginx restart':
   command => '/usr/sbin/service nginx restart',
