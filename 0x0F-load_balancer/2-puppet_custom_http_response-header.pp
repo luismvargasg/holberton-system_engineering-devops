@@ -3,9 +3,8 @@ exec { 'apt-update':
   command => '/usr/bin/apt-get update'
 }
 package { 'nginx':
-  ensure   => 'installed',
-  name     => 'nginx',
-  provider => 'apt',
+  ensure => 'installed',
+  name   => 'nginx',
 }
 file_line { 'append a line in nginx config file':
   path  => '/etc/nginx/nginx.conf',
@@ -13,6 +12,5 @@ file_line { 'append a line in nginx config file':
   match => 'http {',
 }
 exec { 'sudo service nginx restart':
-  path    => '/usr/sbin',
-  command => 'service nginx restart',
+  command => '/usr/sbin/service nginx restart',
 }
