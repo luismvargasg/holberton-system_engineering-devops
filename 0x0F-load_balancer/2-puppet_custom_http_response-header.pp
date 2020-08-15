@@ -1,7 +1,6 @@
 # Configures a brand new Ubuntu machine setting the custom HTTP header
-exec { 'sudo apt update':
-  path    => '/usr/sbin:usr/bin:sbin:bin'
-  command => 'sudo apt update',
+exec { 'apt-update':
+  command => '/usr/bin/apt-get update'
 }
 package { 'nginx':
   ensure   => 'installed',
