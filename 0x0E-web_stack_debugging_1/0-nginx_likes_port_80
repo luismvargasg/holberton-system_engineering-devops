@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script that fixes the listening ports of a nginx server
+sed -i 's/listen 8080 default_server;/listen 80 default_server;/' /etc/nginx/sites-enabled/default
+sed -i 's/listen \[::\]:8080 default_server ipv6only=on;/listen [::]:80 default_server;/' /etc/nginx/sites-enabled/default
+sed -i 's/server_name localhost;/server_name _;/' /etc/nginx/sites-enabled/default
+service nginx restart
