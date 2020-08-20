@@ -1,5 +1,5 @@
 sudo apt-get install ufw
-sudo ufw allow 22
-sudo ufw allow 80
-sudo ufw allow 443
+sudo ufw allow SSH
+sudo ufw allow HTTPS
+sudo ufw allow HTTP
 sudo ufw enable
