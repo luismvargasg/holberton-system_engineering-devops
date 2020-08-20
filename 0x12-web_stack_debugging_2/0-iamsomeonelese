@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that returns the user name passed as an argument
+id -un "$1"
