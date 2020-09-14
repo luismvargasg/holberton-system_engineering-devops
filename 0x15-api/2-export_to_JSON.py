@@ -23,4 +23,4 @@ if __name__ == "__main__":
         my_list.append(my_dict)
     json_dict[id] = my_list
     with open('{}.json'.format(id), 'w') as file:
-        json.dump(json_dict, file)
+        json.dumps(json_dict, file)
