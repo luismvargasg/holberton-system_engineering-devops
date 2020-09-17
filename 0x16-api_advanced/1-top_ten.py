@@ -16,7 +16,7 @@ def top_ten(subreddit):
     try:
         response = r.json().get('data').get('children')
     except:
-        print('None')
+        print(None)
         return
     for item in range(10):
         print(response[item].get('data').get('title'))
