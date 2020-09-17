@@ -13,10 +13,9 @@ def top_ten(subreddit):
         'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
         Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'}
     r = requests.get(url, headers=headers, allow_redirects=False)
-    try:
+    if r.status_code == 200:
         response = r.json().get('data').get('children')
-    except:
+        for item in range(10):
+            print(response[item].get('data').get('title'))
+    else:
         print(None)
-        return
-    for item in range(10):
-        print(response[item].get('data').get('title'))
