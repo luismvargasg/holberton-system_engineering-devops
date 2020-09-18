@@ -16,8 +16,8 @@ def recurse(subreddit, hot_list=[], after=''):
         'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
         Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'}
     r = requests.get(url, headers=headers, allow_redirects=False)
-    after = r.json().get('data').get('after')
     if r.status_code == 200:
+        after = r.json().get('data').get('after')
         response = r.json().get('data').get('children')
         for index in response:
             hot_list.append(index.get('data').get('title'))
