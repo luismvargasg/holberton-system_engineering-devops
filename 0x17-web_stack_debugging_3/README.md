@@ -31,8 +31,7 @@ Wordpress is usually run on LAMP (Linux, Apache, MySQL, and PHP), which is a ver
 
 **Luis Miguel Vargas**
 
-* [Github @luismvargasg](https://github.com/luismvargasg)
-* [LinkedIn - Luis Miguel Vargas](https://www.linkedin.com/in/luismvargasg/)
+[Github](https://github.com/luismvargasg) / [LinkedIn](https://www.linkedin.com/in/luismvargasg/)
 
 ## License
 
