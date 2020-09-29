@@ -32,8 +32,7 @@ Server monitoring: getting data about your virtual or physical server and making
 
 **Luis Miguel Vargas**
 
-* [Github @luismvargasg](https://github.com/luismvargasg)
-* [LinkedIn - Luis Miguel Vargas](https://www.linkedin.com/in/luismvargasg/)
+[Github](https://github.com/luismvargasg) / [LinkedIn](https://www.linkedin.com/in/luismvargasg/)
 
 ## License
 
